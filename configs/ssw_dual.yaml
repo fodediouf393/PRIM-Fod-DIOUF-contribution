@@ -1,0 +1,17 @@
+model: "ssw_dual"
+in_channels: 3
+n_classes: 1
+
+# image input after padding
+img_size: 448
+
+# Dual-branch hyperparams
+rate: 48
+layer_depth: 4         # 4 est un bon compromis (448->224->112->56->28)
+kernel_size: 9
+extend_scope: 3.0
+repeat_n: 1
+
+# Swin params
+window_size: 7         # ok avec 448
+dropout: 0.0

@@ -1,0 +1,8 @@
+threshold: 0.5
+save_binary_only: true
+
+# output root
+out_root: "experiments/inference_outputs"
+
+# Normalisation (pour les modèles "nouvelle approche")
+norm_yaml: "configs/norm.yaml"

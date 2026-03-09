@@ -1,0 +1,8 @@
+name: "DSCNet"
+in_channels: 3
+n_classes: 1
+
+layer_depth: 4
+kernel_size: 9
+extend_scope: 1.0
+rate: 1

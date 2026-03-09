@@ -1,0 +1,16 @@
+model: "transunet"
+in_channels: 3
+n_classes: 1
+img_size: 448
+
+# Transformer bottleneck
+patch_size: 16          # 448/16 = 28 -> 784 tokens
+embed_dim: 384
+depth: 8
+num_heads: 6
+mlp_ratio: 4.0
+dropout: 0.0
+attn_dropout: 0.0
+
+# CNN encoder base width (lightweight)
+base_channels: 32

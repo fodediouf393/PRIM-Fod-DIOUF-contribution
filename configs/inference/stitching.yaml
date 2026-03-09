@@ -1,0 +1,14 @@
+full_size: 400
+patch_size: 256
+stride: 144
+
+# Avec 400, patch 256, stride 144 => positions: 0 et 144
+# On suppose l’ordre de patch_id dans chaque image: (0,0), (144,0), (0,144), (144,144)
+positions:
+  - [0, 0]
+  - [144, 0]
+  - [0, 144]
+  - [144, 144]
+
+patches_per_image: 4
+num_patches_total: 1200

@@ -1,0 +1,9 @@
+epochs: 100
+log_every: 10
+
+lr_start: 1.0e-4
+lr_max: 1.0e-2
+warmup_epochs: 10
+weight_decay: 1.0e-4
+
+skel_iters: 10

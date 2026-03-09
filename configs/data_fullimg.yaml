@@ -1,0 +1,13 @@
+# Full images (400x400) -> pad to 448
+full_dir: "/home/infres/diouf-25/prim-project/data/OCTA(FULL)"
+ilm_opl_dir: "/home/infres/diouf-25/prim-project/data/OCTA(ILM_OPL)"
+opl_bm_dir: "/home/infres/diouf-25/prim-project/data/OCTA(OPL_BM)"
+label_dir: "/home/infres/diouf-25/prim-project/data/GT_Capillary"
+
+split_json: "data/splits/fullimg_split_v1.json"
+norm_yaml: /home/infres/diouf-25/prim-project/configs/norm_fullimg.yaml
+
+
+img_size: 448
+batch_size: 4
+num_workers: 2

@@ -1,0 +1,17 @@
+epochs: 100
+log_every: 10
+
+# LR schedule paper-like-ish (warmup then decay)
+lr_start: 1.0e-4
+lr_max: 1.0e-2
+warmup_epochs: 10
+weight_decay: 1.0e-4
+
+# loss weights
+w_bce: 0.5
+w_dice: 0.5
+w_cldice: 0.2
+skel_iters: 10
+
+# checkpoints
+save_every: 10

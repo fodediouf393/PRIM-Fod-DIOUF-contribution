@@ -1,0 +1,74 @@
+models:
+  # ---------- New approach (3ch projections) ----------
+  - name: "unet_3ch"
+    arch: "unet"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/unet_3ch_norm_2026-02-08_12-28-02/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra: {}
+
+  - name: "unetpp_3ch"
+    arch: "unetpp"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/unetpp_3ch_norm_2026-02-08_20-22-43/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra:
+      deep_supervision: false
+
+  - name: "unetpp_DS_3ch"
+    arch: "unetpp"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/unetpp_DS_3ch_norm_2026-02-11_12-56-57/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra:
+      deep_supervision: true
+
+  - name: "resunet_3ch"
+    arch: "resunet"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/resunet_3ch_norm_2026-02-10_13-52-54/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra: {}
+
+  - name: "r2unet_3ch"
+    arch: "r2unet"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/r2unet_3ch_norm_2026-02-10_20-02-47/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra:
+      t: 2
+
+  - name: "unet3plus_3ch"
+    arch: "unet3plus"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/unet3plus_3ch_norm_2026-02-09_20-35-04/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra:
+      decoder_ch: 128
+      deep_supervision: false
+
+  - name: "attention_unet_3ch"
+    arch: "attention_unet"
+    ckpt_path: "/home/infres/diouf-25/prim-project/experiments/runs/attention_unet_3ch_norm_2026-02-09_12-45-34/seed_0/best_model/best_model.pth"
+    in_channels: 3
+    n_classes: 1
+    base: 42
+    extra: {}
+
+  # ---------- Legacy filtered model ----------
+  - name: "legacy_filtered_unet3plus"
+    arch: "unet3plus_legacy"
+    ckpt_path: "/home/infres/diouf-25/prim-project/best_run1.pth"
+    input_mode: "filtered"
+    in_channels: 3
+    n_classes: 1
+    norm_yaml: null
+    extra:
+      base_channels: 32
+      mid_channels: 32

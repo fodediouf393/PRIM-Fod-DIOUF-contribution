@@ -1,0 +1,12 @@
+models:
+  - name: "legacy_filtered_unet3plus"
+    arch: "unet3plus_legacy"
+    ckpt_path: "/home/infres/diouf-25/prim-project/best_run1.pth"
+    input_mode: "filtered"
+    in_channels: 3
+    n_classes: 1
+    threshold: 0.3
+    norm_yaml: null
+    extra:
+      base_channels: 32
+      mid_channels: 32

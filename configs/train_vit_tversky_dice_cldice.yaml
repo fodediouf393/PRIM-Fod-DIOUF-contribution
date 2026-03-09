@@ -1,0 +1,18 @@
+epochs: 100
+log_every: 10
+
+lr_start: 1.0e-4
+lr_max: 1.0e-3
+warmup_epochs: 10
+weight_decay: 1.0e-2
+
+# Loss 3: 0.3 Dice + 0.2 clDice + 0.5 Tversky
+w_bce: 0.0
+w_dice: 0.3
+w_cldice: 0.2
+w_tversky: 0.5
+tversky_alpha: 0.7
+tversky_beta: 0.3
+
+skel_iters: 10
+save_every: 10

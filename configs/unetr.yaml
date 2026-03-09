@@ -1,0 +1,16 @@
+model: "unetr"
+in_channels: 3
+n_classes: 1
+
+img_size: 448
+patch_size: 8
+
+# ViT/UNETR params
+hidden_size: 384
+mlp_dim: 1536
+num_layers: 12
+num_heads: 6
+dropout_rate: 0.0
+
+# optional
+use_checkpoint: false

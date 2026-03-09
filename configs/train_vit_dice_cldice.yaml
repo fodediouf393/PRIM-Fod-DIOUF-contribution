@@ -1,0 +1,15 @@
+epochs: 100
+log_every: 10
+
+lr_start: 1.0e-4
+lr_max: 1.0e-3
+warmup_epochs: 10
+weight_decay: 1.0e-2
+
+# Loss 1
+w_bce: 0.0
+w_dice: 0.8
+w_cldice: 0.2
+skel_iters: 10
+
+save_every: 10

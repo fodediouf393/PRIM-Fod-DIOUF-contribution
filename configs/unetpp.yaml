@@ -1,0 +1,6 @@
+model: "unetpp"
+in_channels: 3
+n_classes: 1
+base: 42
+extra:
+  deep_supervision: true
