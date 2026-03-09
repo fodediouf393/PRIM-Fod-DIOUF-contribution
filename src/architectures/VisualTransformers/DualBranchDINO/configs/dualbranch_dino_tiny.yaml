@@ -1,0 +1,22 @@
+run_prefix: dualbranch_dino_tiny
+runs_root: /home/infres/diouf-25/prim-project/experiments/runs
+device: cuda
+
+data_yaml: /home/infres/diouf-25/prim-project/configs/data_fullimg.yaml
+
+# Model
+vit_name: vit_small_patch8_224
+in_chans: 3
+base_ch: 48
+pretrained_vit: true
+vit_drop: 0.0
+vit_freeze: true
+unfreeze_epoch: 15
+use_gating: true
+
+# Optim
+epochs: 100
+lr: 0.001
+vit_lr: 0.0001
+weight_decay: 0.01
+min_lr: 0.000001
