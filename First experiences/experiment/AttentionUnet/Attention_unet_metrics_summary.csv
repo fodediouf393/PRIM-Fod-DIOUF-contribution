@@ -1,0 +1,2 @@
+Method,AUC,Dice,Precision,Recall,Accuracy,MCC
+Attention U-Net (3ch),0.957 ± 0.000,0.845 ± 0.006,0.856 ± 0.030,0.837 ± 0.038,0.886 ± 0.003,0.757 ± 0.005

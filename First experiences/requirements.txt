@@ -1,0 +1,39 @@
+# === Environnement de base ===
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+natsort>=8.4.0
+
+# === Traitement et manipulation d'images ===
+opencv-python>=4.8.0
+scikit-image>=0.21.0
+Pillow>=10.0.0
+
+
+
+
+
+# === Utilitaires pour notebooks et visualisation ===
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+notebook>=7.0.0
+
+# === Augmentation et prétraitement avancés ===
+albumentations>=1.4.0
+imgaug>=0.4.0
+
+# === Manipulation de formats médicaux (DICOM, NIfTI, etc.) ===
+pydicom>=2.4.0
+SimpleITK>=2.3.0
+nibabel>=5.1.0
+
+# === Suivi d'expérience et logs (optionnel) ===
+tensorboard>=2.15.0
+wandb>=0.17.0
+
+# === Sauvegarde et export des modèles ===
+onnx>=1.15.0
+onnxruntime>=1.16.0

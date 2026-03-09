@@ -1,0 +1,2 @@
+Method,AUC,Dice,Precision,Recall,Accuracy,MCC
+UNet3Plus (3ch),0.958 ± 0.000,0.852 ± 0.000,0.835 ± 0.005,0.870 ± 0.005,0.888 ± 0.001,0.762 ± 0.001
