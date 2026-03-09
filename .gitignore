@@ -1,0 +1,55 @@
+# JSON
+*.json
+
+# Images courantes
+*.png
+*.jpg
+*.jpeg
+*.jpe
+*.jfif
+*.pjpeg
+*.pjp
+*.gif
+*.bmp
+*.dib
+*.tif
+*.tiff
+*.webp
+*.svg
+*.svgz
+*.ico
+*.heic
+*.heif
+*.avif
+
+# Formats photo / RAW
+*.raw
+*.dng
+*.cr2
+*.cr3
+*.nef
+*.nrw
+*.arw
+*.srf
+*.sr2
+*.orf
+*.rw2
+*.raf
+*.pef
+*.srw
+*.x3f
+*.erf
+*.kdc
+*.dcr
+*.mrw
+
+# Formats supplémentaires
+*.psd
+*.ai
+*.eps
+*.indd
+# Cache Python
+*.pyc
+__pycache__/
+# fichiers poids 
+*.pth
