@@ -1,0 +1,71 @@
+[INFO] test patches in split: 240
+[INFO] derived test images: 60
+[INFO] expanded patches to predict (full coverage): 240
+
+=== Inference: unet_3ch (unet) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/unet_3ch_norm_2026-02-08_12-28-02/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+/home/infres/diouf-25/prim-project/src/inference/run_inference_all.py:79: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location=device)
+Saved patch binary masks (.png): experiments/inference_outputs/unet_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/unet_3ch/seed_0/full_400_bin
+
+=== Inference: unetpp_3ch (unetpp) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/unetpp_3ch_norm_2026-02-08_20-22-43/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/unetpp_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/unetpp_3ch/seed_0/full_400_bin
+
+=== Inference: unetpp_DS_3ch (unetpp) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/unetpp_DS_3ch_norm_2026-02-11_12-56-57/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/unetpp_DS_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/unetpp_DS_3ch/seed_0/full_400_bin
+
+=== Inference: resunet_3ch (resunet) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/resunet_3ch_norm_2026-02-10_13-52-54/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/resunet_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/resunet_3ch/seed_0/full_400_bin
+
+=== Inference: r2unet_3ch (r2unet) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/r2unet_3ch_norm_2026-02-10_20-02-47/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/r2unet_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/r2unet_3ch/seed_0/full_400_bin
+
+=== Inference: unet3plus_3ch (unet3plus) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/unet3plus_3ch_norm_2026-02-09_20-35-04/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/unet3plus_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/unet3plus_3ch/seed_0/full_400_bin
+
+=== Inference: attention_unet_3ch (attention_unet) ===
+ckpt: /home/infres/diouf-25/prim-project/experiments/runs/attention_unet_3ch_norm_2026-02-09_12-45-34/seed_0/best_model/best_model.pth
+input_mode: raw
+norm_yaml: configs/norm.yaml
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/attention_unet_3ch/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/attention_unet_3ch/seed_0/full_400_bin
+
+=== Inference: legacy_filtered_unet3plus (unet3plus_legacy) ===
+ckpt: /home/infres/diouf-25/prim-project/best_run1.pth
+input_mode: filtered
+norm_yaml: None
+threshold: 0.5
+Saved patch binary masks (.png): experiments/inference_outputs/legacy_filtered_unet3plus/seed_0/patches_bin
+Saved reconstructed test full 400 binary masks (.png): experiments/inference_outputs/legacy_filtered_unet3plus/seed_0/full_400_bin
+
+Done.

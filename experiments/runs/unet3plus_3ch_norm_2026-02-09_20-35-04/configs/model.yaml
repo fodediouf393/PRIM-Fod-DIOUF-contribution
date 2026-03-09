@@ -1,0 +1,7 @@
+base: 42
+extra:
+  decoder_ch: 128
+  deep_supervision: false
+in_channels: 3
+model: unet3plus
+n_classes: 1

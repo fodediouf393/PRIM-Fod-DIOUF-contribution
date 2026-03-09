@@ -1,0 +1,5 @@
+base: 42
+extra: {}
+in_channels: 3
+model: resunet
+n_classes: 1

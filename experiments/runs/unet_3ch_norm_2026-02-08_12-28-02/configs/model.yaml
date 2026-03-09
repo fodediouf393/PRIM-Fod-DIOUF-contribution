@@ -1,0 +1,4 @@
+base: 42
+in_channels: 3
+model: unet
+n_classes: 1

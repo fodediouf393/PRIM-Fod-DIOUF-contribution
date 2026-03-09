@@ -1,0 +1,6 @@
+base: 42
+extra:
+  t: 2
+in_channels: 3
+model: r2unet
+n_classes: 1

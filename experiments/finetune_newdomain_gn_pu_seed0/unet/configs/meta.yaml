@@ -1,0 +1,17 @@
+arch: unet
+batch_size: 1
+epochs: 90
+gn_groups_max: 32
+lr_max: 0.0003
+lr_start: 1.0e-05
+norm_yaml: configs/norm_newdomain.yaml
+num_workers: 2
+out_dir: experiments/finetune_newdomain_gn_pu_seed0/unet
+pad_to: 832
+pretrained_run_dir: experiments/runs/unet_3ch_norm_2026-02-08_12-28-02
+pu_e1: 10
+pu_e2: 25
+seed: 0
+split_json: data/splits/split_newdomain_v1.json
+warmup_epochs: 5
+weight_decay: 0.0001
